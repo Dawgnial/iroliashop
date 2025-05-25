@@ -1,0 +1,66 @@
+
+@font-face {
+  font-family: 'Samim';
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim.woff2') format('woff2'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim.woff') format('woff'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Samim';
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim-Bold.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim-Bold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim-Bold.woff2') format('woff2'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim-Bold.woff') format('woff'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Samim/Samim-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff2') format('woff2'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.woff') format('woff'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Shabnam';
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.woff2') format('woff2'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.woff') format('woff'),
+       url('https://cdn.fontcdn.ir/Font/Persian/Shabnam/Shabnam-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWeb.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWeb.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWeb.woff2') format('woff2'),
+       url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWeb.woff') format('woff'),
+       url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWeb.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'IRANYekan';
+  src: url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWebBold.eot');
+  src: url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWebBold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWebBold.woff2') format('woff2'),
+       url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWebBold.woff') format('woff'),
+       url('https://cdn.fontcdn.ir/Font/Persian/IRANYekan/IRANYekanWebBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
