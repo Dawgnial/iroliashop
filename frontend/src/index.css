@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/sahel-font@v3.4.0/dist/font-face.css');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/tanha-font@v0.17/dist/font-face.css');
+@import './fonts/webfonts.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 130 37% 94%;
+    --foreground: 160 40% 20%;
+
+    --card: 0 0% 98%;
+    --card-foreground: 160 40% 20%;
+
+    --popover: 0 0% 98%;
+    --popover-foreground: 160 40% 20%;
+
+    --primary: 160 47% 38%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 101 35% 55%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 80 57% 84%;
+    --muted-foreground: 0 0% 66%;
+
+    --accent: 101 35% 55%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 20% 85%;
+    --input: 160 20% 85%;
+    --ring: 160 47% 38%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 160 40% 12%;
+    --foreground: 80 57% 90%;
+
+    --card: 160 40% 15%;
+    --card-foreground: 80 57% 90%;
+
+    --popover: 160 40% 15%;
+    --popover-foreground: 80 57% 90%;
+
+    --primary: 160 47% 38%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 101 35% 45%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 160 40% 20%;
+    --muted-foreground: 80 57% 90%;
+
+    --accent: 160 47% 38%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 80 57% 90%;
+
+    --border: 160 40% 25%;
+    --input: 160 40% 25%;
+    --ring: 160 47% 38%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  body {
+    @apply bg-background text-foreground font-noto;
+    direction: rtl;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-vazir font-bold;
+  }
+  
+  /* بهبود کیفیت متن */
+  h1, h2, h3, h4, h5, h6, p, span, a, button, input {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  /* اسکرول‌بار سفارشی */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    @apply bg-gray-100 dark:bg-gray-800;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-persian-dark/40 dark:bg-persian-medium/60 rounded-full hover:bg-persian-dark/60 dark:hover:bg-persian-medium/80 transition-colors duration-300;
+  }
+  
+  ::selection {
+    @apply bg-persian-dark/20 text-persian-dark dark:bg-persian-medium/30 dark:text-white;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary hover:bg-opacity-90 text-white px-4 py-2 rounded-md transition-all;
+  }
+  
+  .btn-secondary {
+    @apply bg-secondary hover:bg-opacity-90 text-white px-4 py-2 rounded-md transition-all;
+  }
+
+  .container-custom {
+    @apply container mx-auto px-4 md:px-6 lg:px-8;
+  }
+
+  .text-shadow-sm {
+    text-shadow: 1px 1px 2px rgba(50, 142, 110, 0.3);
+  }
+  
+  .text-shadow-md {
+    text-shadow: 2px 2px 4px rgba(50, 142, 110, 0.4);
+  }
+  
+  .heading-decorated {
+    @apply font-vazir relative inline-block;
+    &::after {
+      content: '';
+      @apply absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1/2 h-1 bg-primary rounded-full;
+    }
+  }
+
+  /* میکرواینترکشن‌ها */
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-105;
+  }
+
+  .hover-glow {
+    @apply transition-all duration-300 hover:shadow-lg hover:shadow-primary/20;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1.5 hover:shadow-lg;
+  }
+  
+  /* جلوه‌های بصری پیشرفته */
+  .glass-effect {
+    @apply bg-white/10 backdrop-blur-md border border-white/30 dark:bg-black/10 dark:border-white/10;
+  }
+  
+  .frost-effect {
+    @apply backdrop-blur-lg bg-white/70 dark:bg-gray-900/70 border border-white/30 dark:border-gray-700/30;
+  }
+  
+  .shadow-glow {
+    box-shadow: 0 0 15px rgba(50, 142, 110, 0.3);
+  }
+  
+  /* دکمه‌های زیبا */
+  .fancy-button {
+    @apply relative overflow-hidden bg-primary text-white rounded-lg px-6 py-3 font-medium transition-all duration-300 hover:shadow-lg hover:shadow-primary/30 active:scale-95;
+    &::before {
+      content: '';
+      @apply absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 transition-opacity duration-300;
+    }
+    &:hover::before {
+      @apply opacity-100;
+    }
+  }
+  
+  /* کارت‌های زیبا */
+  .fancy-card {
+    @apply bg-card text-card-foreground rounded-xl shadow-xl border border-primary/5 dark:border-white/5 overflow-hidden transition-all duration-300 hover:shadow-2xl hover:border-primary/20 dark:hover:border-white/20;
+  }
+  
+  /* عناوین زیبا */
+  .fancy-title {
+    @apply relative inline-block font-vazir font-bold;
+    &::after {
+      content: '';
+      @apply absolute -bottom-2 left-1/4 right-1/4 h-1 bg-primary/40 dark:bg-persian-light/30 rounded-full;
+    }
+  }
+}
+
+/* نمایش لودینگ */
+.loading-container {
+  @apply fixed inset-0 flex items-center justify-center bg-background bg-opacity-80 z-50 transition-opacity duration-300;
+}
+
+.loading-spinner {
+  @apply w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin;
+}
+
+/* پیش‌نمایش لینک‌ها یا تصاویر */
+.link-preview {
+  @apply relative;
+}
+
+/* Add the group class directly in HTML where needed instead of via @apply */
+/* Use standard CSS for the parent-child relationship with group */
+.link-preview-content {
+  @apply invisible opacity-0 absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 p-2 bg-card rounded shadow-lg z-20 
+  transition-all duration-300 w-48 pointer-events-none;
+}
+
+/* Add a separate rule for the group hover state */
+.group:hover .link-preview-content {
+  @apply visible opacity-100;
+}
