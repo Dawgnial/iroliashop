@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = git@github.com:Dawgnial/iroliashop-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = git@github.com:Dawgnial/iroliashop-frontend.git
